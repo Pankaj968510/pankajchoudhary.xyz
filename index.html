@@ -49,6 +49,10 @@ border:1px solid rgba(181,140,255,.22);box-shadow:0 0 80px rgba(139,92,246,.13),
 .orb:before,.orb:after{content:"";position:absolute;border:1px solid rgba(215,181,109,.25);border-radius:50%;width:250px;height:110px}
 .orb:before{transform:rotate(35deg)}.orb:after{transform:rotate(-35deg)}
 .core{width:80px;height:80px;border-radius:50%;background:radial-gradient(circle,#c4a2ff,#6d3fc0);box-shadow:0 0 50px rgba(181,140,255,.55)}
+.photo{width:68%;height:68%;border-radius:50%;position:relative;z-index:2;padding:4px;
+background:linear-gradient(135deg,var(--gold),var(--light) 55%,var(--purple));
+box-shadow:0 0 60px rgba(139,92,246,.4),0 0 34px rgba(215,181,109,.28)}
+.photo img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;border:3px solid var(--bg)}
 @keyframes float{50%{transform:translateY(-15px)}}section{padding:110px 0}
 .title{font-family:"Playfair Display",serif;font-size:clamp(35px,5vw,53px);line-height:1.1;margin:12px 0 20px}
 .desc{color:var(--muted);max-width:700px}.grid2{margin-top:45px;display:grid;grid-template-columns:1fr 1fr;gap:25px}
@@ -104,7 +108,7 @@ footer{padding:35px 0;border-top:1px solid rgba(255,255,255,.07);color:#77727e;f
 <a href="https://www.linkedin.com/in/pankajchoudharykalal" target="_blank" rel="noopener" class="btn outline">LinkedIn ↗</a>
 </div>
 </div>
-<div class="visual"><div class="orb"><div class="core"></div></div></div>
+<div class="visual"><div class="orb"><div class="photo"><img src="https://plain-apac-prod-public.komododecks.com/202608/31/FUBk4XKbUhZklbRtSjBH/image.jpg" alt="Portrait of Pankaj Choudhary, B.Pharm student" width="400" height="400" fetchpriority="high" decoding="async"></div></div></div>
 </div>
 </section>
 
@@ -166,7 +170,7 @@ footer{padding:35px 0;border-top:1px solid rgba(255,255,255,.07);color:#77727e;f
 <p>For academic collaboration, research discussions, professional opportunities or scientific networking.</p>
 <div class="socials">
 <a href="https://www.linkedin.com/in/pankajchoudharykalal" target="_blank" rel="noopener" class="btn primary">LinkedIn ↗</a>
-<a href="mailto:your.pankaj968510@gmail.com" class="btn outline">Email</a>
+<a href="mailto:your.email@example.com" class="btn outline">Email</a>
 </div>
 </div>
 </div>
