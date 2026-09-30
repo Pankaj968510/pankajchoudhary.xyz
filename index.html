@@ -80,6 +80,18 @@ footer{padding:35px 0;border-top:1px solid rgba(255,255,255,.07);color:#77727e;f
 .links.active{display:flex}.hero-grid{grid-template-columns:1fr;text-align:center}.hero p{margin-left:auto;margin-right:auto}.buttons{justify-content:center}
 .visual{order:-1}.orb{width:260px;height:260px}.grid2,.grid3,.projects{grid-template-columns:1fr}.contact{padding:35px 20px}.foot{flex-direction:column;text-align:center}
 }
+  /* Featured Research (Gardenia) */
+.gl-title{font-size:clamp(28px,4vw,42px)}
+.gl-family{color:var(--gold);font-style:italic;font-size:14px;margin-bottom:18px}
+.gl-text{margin-top:45px;display:grid;gap:16px;max-width:760px}
+.gl-text p{color:#bcb7c2}
+.gl-images{margin:45px 0;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.gl-images figure{margin:0;padding:10px;border-radius:18px;background:var(--card);border:1px solid var(--border);transition:.35s}
+.gl-images figure:hover{transform:translateY(-5px);border-color:rgba(181,140,255,.3)}
+.gl-images img{width:100%;height:auto;display:block;border-radius:12px}
+.gl-focus{padding:26px 30px;border-radius:18px;background:linear-gradient(145deg,rgba(139,92,246,.08),rgba(255,255,255,.025));border:1px solid var(--border)}
+.gl-focus h3{font-size:16px;color:var(--gold);margin-bottom:4px}
+@media(max-width:850px){.gl-images{grid-template-columns:1fr}}
 </style>
 </head>
 
@@ -90,7 +102,10 @@ footer{padding:35px 0;border-top:1px solid rgba(255,255,255,.07);color:#77727e;f
 <div class="menu" onclick="toggleMenu()">☰</div>
 <ul class="links" id="links">
 <li><a href="#about">About</a></li><li><a href="#research">Research</a></li>
-<li><a href="#projects">Projects</a></li><li><a href="#journey">Journey</a></li>
+<li><a href="#projects">Projects</a></li>
+  <li><a href="#journey">Journey</a></li>
+  <li><a href="#featured">Featured</a></li>
+  
 <li><a href="#contact" class="navbtn">Contact</a></li>
 </ul>
 </div>
@@ -150,10 +165,38 @@ footer{padding:35px 0;border-top:1px solid rgba(255,255,255,.07);color:#77727e;f
 </div>
 </div>
 </section>
+  <section id="featured">
+<div class="container">
+<div class="label">04 — Featured Research</div>
+<h2 class="title gl-title">Gardenia latifolia Ait. – Evaluation of Anti-Inflammatory Potential</h2>
+<div class="gl-family">Family: Rubiaceae</div>
+
+<div class="gl-text">
+<p>Gardenia latifolia Ait., belonging to the family Rubiaceae, is a medicinal plant traditionally recognized for its therapeutic potential. In this research work, the leaves of Gardenia latifolia were investigated for their in-vitro anti-inflammatory activity using hydroalcoholic leaf extract.</p>
+<p>The anti-inflammatory potential was evaluated through established experimental models, including protein denaturation inhibition and erythrocyte membrane stabilization assays. Diclofenac sodium was used as a standard reference drug for comparison.</p>
+</div>
+
+<div class="gl-images">
+<figure><img loading="lazy" src="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/ck1rgejap3v1tagimbyz" alt="Gardenia latifolia research work – image 1"></figure>
+<figure><img loading="lazy" src="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/qow2pvsa8fe4dsvyph3y" alt="Gardenia latifolia research work – image 2"></figure>
+</div>
+
+<div class="gl-text" style="margin-top:0;margin-bottom:30px">
+<p>The study explores the potential of Gardenia latifolia as a source of bioactive phytoconstituents with possible anti-inflammatory properties and contributes to the scientific evaluation of traditionally used medicinal plants.</p>
+</div>
+
+<div class="gl-focus">
+<h3>Research Focus</h3>
+<div class="tags">
+<span class="tag">Natural Products</span><span class="tag">Pharmacognosy</span><span class="tag">Phytopharmacology</span><span class="tag">Anti-inflammatory Activity</span><span class="tag">Herbal Drug Research</span>
+</div>
+</div>
+</div>
+</section>
 
 <section id="journey">
 <div class="container">
-<div class="label">04 — Journey</div><h2 class="title">Academic Journey</h2>
+<div class="label">05 — Journey</div><h2 class="title">Academic Journey</h2>
 <div class="timeline">
 <div class="item"><div class="date">PRESENT</div><h3>Bachelor of Pharmacy</h3><p>Pursuing B.Pharm with interests spanning pharmaceutical research, drug discovery and emerging healthcare technologies.</p></div>
 <div class="item"><div class="date">RESEARCH INTEREST</div><h3>AI × Pharmaceutical Sciences</h3><p>Building knowledge around artificial intelligence, computational drug discovery and modern approaches to pharmaceutical research.</p></div>
@@ -165,7 +208,7 @@ footer{padding:35px 0;border-top:1px solid rgba(255,255,255,.07);color:#77727e;f
 <section id="contact">
 <div class="container">
 <div class="contact">
-<div class="label">05 — Connect</div>
+<div class="label">06 — Connect</div>
 <h2>Let's connect through science.</h2>
 <p>For academic collaboration, research discussions, professional opportunities or scientific networking.</p>
 <div class="socials">
