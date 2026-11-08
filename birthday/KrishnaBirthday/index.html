@@ -12,12 +12,10 @@
     html{scroll-behavior:smooth}
     body{margin:0;min-height:100vh;overflow-x:hidden;color:var(--cream);font-family:Georgia,'Times New Roman',serif;background:radial-gradient(ellipse at 50% -10%,#704080 0%,#342044 42%,#120c1d 100%)}
     body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;background-image:radial-gradient(2px 2px at 15% 22%,#fff 50%,transparent 60%),radial-gradient(1px 1px at 76% 17%,#fff 50%,transparent 60%),radial-gradient(2px 2px at 88% 72%,#fff 50%,transparent 60%),radial-gradient(1px 1px at 32% 83%,#fff 50%,transparent 60%);background-size:240px 220px;animation:twinkle 5s ease-in-out infinite alternate}
-  
     @keyframes twinkle{to{opacity:.75;transform:translateY(-5px)}}
     .page{width:min(900px,100%);margin:auto;padding:34px 17px 60px;position:relative}
     .hero,.panel{border:1px solid #ffe0ad55;background:linear-gradient(145deg,#ffffff17,#ffffff08);box-shadow:0 22px 75px #0006,inset 0 1px #ffffff24;backdrop-filter:blur(12px);border-radius:28px}
     .hero{text-align:center;padding:clamp(27px,6vw,62px) clamp(18px,6vw,65px);animation:arrive .9s ease both}
-  
     @keyframes arrive{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
     .eyebrow{font:700 11px Arial,sans-serif;letter-spacing:5px;text-transform:uppercase;color:var(--gold)}
     h1{font-size:clamp(43px,9vw,82px);line-height:1;margin:17px 0 8px;color:var(--gold);text-shadow:0 5px 30px #ffb85a66}
@@ -25,7 +23,6 @@
     .photo-wrap{width:190px;height:190px;margin:0 auto 22px;border:4px solid var(--gold);border-radius:50%;padding:5px;background:#fff2;box-shadow:0 0 0 8px #ffe09a18,0 12px 35px #0008;overflow:hidden}
     .photo-wrap img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
     .cake{font-size:76px;display:inline-block;filter:drop-shadow(0 10px 15px #0007);animation:bob 2.4s ease-in-out infinite}
-  
     @keyframes bob{50%{transform:translateY(-9px) rotate(3deg)}}
     .wish{max-width:680px;margin:8px auto 0;font-size:clamp(16px,2.4vw,19px);line-height:1.85;color:#fff1eb}
     .wish strong{color:var(--gold);font-weight:normal}
@@ -44,14 +41,10 @@
     .signature{margin-top:25px;color:#ffffffa8;font:11px Arial,sans-serif;letter-spacing:2px}
     .footer{text-align:center;color:#ffffff8c;font:12px Arial,sans-serif;margin:22px 0 0}
     .confetti{position:fixed;top:-15px;width:9px;height:14px;pointer-events:none;z-index:10;animation:fall linear forwards}
-   
     @keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(780deg);opacity:.8}}
     .floating{position:fixed;bottom:-30px;z-index:0;pointer-events:none;animation:floatUp 7s linear forwards;opacity:.85}
-  
     @keyframes floatUp{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
-   
     @media(max-width:560px){.meme-grid{grid-template-columns:1fr}.photo-wrap{width:160px;height:160px}.page{padding-top:18px}}
- 
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
   </style>
 </head>
