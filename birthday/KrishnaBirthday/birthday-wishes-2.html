@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#170d25" />
+  <meta name="description" content="A little birthday surprise made with love, laughter and extra drama." />
+  <title>Happy Birthday! 💖</title>
+  <style>
+    :root{--gold:#ffe09a;--pink:#ffacd0;--cream:#fff7f0;--lav:#d9c1ff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;min-height:100vh;overflow-x:hidden;color:var(--cream);font-family:Georgia,'Times New Roman',serif;background:radial-gradient(ellipse at 50% -10%,#704080 0%,#342044 42%,#120c1d 100%)}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;background-image:radial-gradient(2px 2px at 15% 22%,#fff 50%,transparent 60%),radial-gradient(1px 1px at 76% 17%,#fff 50%,transparent 60%),radial-gradient(2px 2px at 88% 72%,#fff 50%,transparent 60%),radial-gradient(1px 1px at 32% 83%,#fff 50%,transparent 60%);background-size:240px 220px;animation:twinkle 5s ease-in-out infinite alternate}
+    @keyframes twinkle{to{opacity:.75;transform:translateY(-5px)}}
+    .page{width:min(900px,100%);margin:auto;padding:34px 17px 60px;position:relative}
+    .hero,.panel{border:1px solid #ffe0ad55;background:linear-gradient(145deg,#ffffff17,#ffffff08);box-shadow:0 22px 75px #0006,inset 0 1px #ffffff24;backdrop-filter:blur(12px);border-radius:28px}
+    .hero{text-align:center;padding:clamp(27px,6vw,62px) clamp(18px,6vw,65px);animation:arrive .9s ease both}
+    @keyframes arrive{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+    .eyebrow{font:700 11px Arial,sans-serif;letter-spacing:5px;text-transform:uppercase;color:var(--gold)}
+    h1{font-size:clamp(43px,9vw,82px);line-height:1;margin:17px 0 8px;color:var(--gold);text-shadow:0 5px 30px #ffb85a66}
+    .name{font-size:clamp(27px,5vw,43px);font-style:italic;color:#ffd1e7;margin:12px 0 22px}
+    .photo-wrap{width:190px;height:190px;margin:0 auto 22px;border:4px solid var(--gold);border-radius:50%;padding:5px;background:#fff2;box-shadow:0 0 0 8px #ffe09a18,0 12px 35px #0008;overflow:hidden}
+    .photo-wrap img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+    .cake{font-size:76px;display:inline-block;filter:drop-shadow(0 10px 15px #0007);animation:bob 2.4s ease-in-out infinite}
+    @keyframes bob{50%{transform:translateY(-9px) rotate(3deg)}}
+    .wish{max-width:680px;margin:8px auto 0;font-size:clamp(16px,2.4vw,19px);line-height:1.85;color:#fff1eb}
+    .wish strong{color:var(--gold);font-weight:normal}
+    .divider{height:1px;width:110px;margin:27px auto;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+    .blessing{font-size:19px;line-height:1.7;color:#ffc9df;font-style:italic}
+    .panel{margin-top:22px;padding:clamp(22px,4vw,36px);text-align:center}
+    h2{font-size:clamp(24px,5vw,34px);color:var(--gold);margin:0 0 17px}
+    .panel p{font-size:16px;line-height:1.8;margin:10px auto;max-width:700px}
+    .meme-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}
+    .meme{border:1px solid #ffffff30;border-radius:18px;padding:20px 15px;background:linear-gradient(145deg,#ffacd022,#d9c1ff12);min-height:145px;display:flex;flex-direction:column;justify-content:center;gap:9px}
+    .meme .emoji{font-size:36px}.meme strong{color:#ffe09a;font:700 14px Arial,sans-serif;letter-spacing:.5px}.meme span:last-child{font-size:15px;line-height:1.5}
+    .love-note{font-size:18px!important;color:#ffe0ed}
+    .quote{font-style:italic;color:#e9d8ff;border-left:3px solid var(--pink);padding:8px 15px;margin:20px auto!important;max-width:620px;text-align:left}
+    button{margin:23px 7px 0;border:1px solid #ffe5b3;border-radius:999px;padding:14px 25px;color:#28152f;background:linear-gradient(120deg,#ffe5a7,#ffb9d7);font-weight:800;font-size:14px;cursor:pointer;box-shadow:0 8px 24px #0005;transition:transform .2s}
+    button:hover{transform:translateY(-3px) scale(1.02)}
+    .signature{margin-top:25px;color:#ffffffa8;font:11px Arial,sans-serif;letter-spacing:2px}
+    .footer{text-align:center;color:#ffffff8c;font:12px Arial,sans-serif;margin:22px 0 0}
+    .confetti{position:fixed;top:-15px;width:9px;height:14px;pointer-events:none;z-index:10;animation:fall linear forwards}
+    @keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(780deg);opacity:.8}}
+    .floating{position:fixed;bottom:-30px;z-index:0;pointer-events:none;animation:floatUp 7s linear forwards;opacity:.85}
+    @keyframes floatUp{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+    @media(max-width:560px){.meme-grid{grid-template-columns:1fr}.photo-wrap{width:160px;height:160px}.page{padding-top:18px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">Today's forecast: 100% chance of cake</div>
+      <h1>Happy Birthday</h1>
+
+      <!-- EDIT NAME HERE: Replace "Your Favourite Human" with the birthday person's name. -->
+      <div class="name" id="birthdayName">Dear Your Favourite Human ✨</div>
+
+      <!-- EDIT PHOTO HERE: Replace the URL below with a publicly accessible image URL.
+           Example: https://your-domain.com/images/friend.jpg
+           If the photo is in your GitHub repo, use its hosted URL (not a local phone path). -->
+      <div class="photo-wrap">
+        <img id="birthdayPhoto" src="https://placehold.co/600x600/3b244b/ffe09a?text=Your+Photo+Here" alt="Birthday person's photo" />
+      </div>
+
+      <div class="cake" aria-label="Birthday cake">🎂</div>
+      <div class="wish">
+        Some people make the world brighter just by being in it… and then there's you,
+        who also makes it louder, funnier and slightly more dramatic. 😂💗<br><br>
+        May your day be filled with <strong>big smiles, warm hugs, crazy memories,</strong>
+        delicious food and people who genuinely care about you. May this new year bring
+        you good health, peaceful days, exciting opportunities and every little thing
+        your heart has been quietly wishing for.<br><br>
+        Never forget how special you are. Keep smiling, keep growing, keep being your
+        wonderfully weird self. You deserve all the happiness in the universe — and
+        obviously, unlimited cake today. 🍰
+      </div>
+      <div class="divider"></div>
+      <div class="blessing">May all your wishes come true… except the ones that require you to stop being this cute. 🥹💖</div>
+      <button type="button" id="celebrate">🎉 Tap for birthday dhamaka</button>
+      <div class="signature">MADE WITH LOVE · A LITTLE CRINGE · LOTS OF CARE</div>
+    </section>
+
+    <section class="panel">
+      <h2>A tiny reminder for you 💌</h2>
+      <p class="love-note">I hope you always have a reason to smile, someone to listen when life gets heavy,
+        and a safe place where you can be completely yourself. Please take care of yourself,
+        eat on time, drink water, get enough sleep and don't be too hard on yourself.</p>
+      <p>And whenever life feels difficult, remember: you've survived 100% of your worst days so far.
+        That's a pretty impressive record, superstar. 🌷</p>
+      <div class="quote">“You are not getting older… you're just becoming a limited edition. Rare, expensive and a little difficult to handle.” 😌</div>
+    </section>
+
+    <section class="panel">
+      <h2>Birthday memes, because why so serious? 😂</h2>
+      <div class="meme-grid">
+        <div class="meme"><span class="emoji">🧁😋</span><strong>ME: I'LL EAT JUST ONE SLICE</strong><span>ALSO ME 5 MINUTES LATER: Cake ka address bhejo. 🎂</span></div>
+        <div class="meme"><span class="emoji">📸😭</span><strong>YOU AFTER SAYING “ONE PHOTO”</strong><span>47 poses, 89 retakes and still: “Yaar, achhi nahi aayi!”</span></div>
+        <div class="meme"><span class="emoji">👑😎</span><strong>AGE: +1</strong><span>MATURITY: Still buffering… please wait. 😂</span></div>
+        <div class="meme"><span class="emoji">💸🎁</span><strong>MY GIFT TO YOU</strong><span>Unlimited wishes, free advice and lifetime of tolerating your drama. You're welcome. 🤝</span></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>One last thing… 🫶</h2>
+      <p class="love-note">Thank you for being you. I hope this year is gentle with your heart,
+        generous with its surprises and full of moments that make you think,
+        “Yaar, life is actually beautiful.”</p>
+      <p>Stay happy, stay healthy, stay blessed — and haan, party pending hai. Treat toh banta hai! 😤🍕</p>
+      <button type="button" id="moreLove">💖 Send some extra pyaar</button>
+      <div class="signature">HAPPY BIRTHDAY, YOU BEAUTIFUL HUMAN! ✨</div>
+    </section>
+    <div class="footer">Made with 💗, good wishes and questionable jokes.</div>
+  </main>
+
+  <script>
+    const colors = ['#ffe09a','#ff9ecb','#ffffff','#c8a7ff','#9ee7dc'];
+    function celebrate(){
+      for(let i=0;i<130;i++){
+        const bit=document.createElement('span');bit.className='confetti';
+        bit.style.left=Math.random()*100+'vw';bit.style.background=colors[Math.floor(Math.random()*colors.length)];
+        bit.style.borderRadius=Math.random()>.5?'50%':'2px';bit.style.setProperty('--drift',(Math.random()*260-130)+'px');
+        bit.style.animationDuration=(3+Math.random()*3)+'s';bit.style.animationDelay=(Math.random()*.7)+'s';
+        document.body.appendChild(bit);setTimeout(()=>bit.remove(),7000);
+      }
+    }
+    function showerLove(){
+      const icons=['💖','💕','✨','🌸','💗','🥳'];
+      for(let i=0;i<24;i++){
+        const el=document.createElement('span');el.className='floating';el.textContent=icons[Math.floor(Math.random()*icons.length)];
+        el.style.left=Math.random()*100+'vw';el.style.fontSize=(18+Math.random()*22)+'px';el.style.animationDuration=(5+Math.random()*4)+'s';
+        document.body.appendChild(el);setTimeout(()=>el.remove(),9500);
+      }
+    }
+    document.getElementById('celebrate').addEventListener('click',()=>{celebrate();showerLove()});
+    document.getElementById('moreLove').addEventListener('click',()=>{
+      showerLove();
+      alert('Sending you a truckload of hugs, smiles and pyaar! 🤗💖\n\nNow smile… birthday star!');
+    });
+    window.addEventListener('load',()=>setTimeout(()=>{celebrate();showerLove()},450));
+  </script>
+</body>
+</html>
