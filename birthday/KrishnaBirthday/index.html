@@ -111,6 +111,30 @@
       <button type="button" id="moreLove">💖 Send some extra pyaar</button>
       <div class="signature">HAPPY BIRTHDAY, Krishna D.! ✨</div>
     </section>
+
+    <!-- Birthday Background Music -->
+<audio id="birthdaySong" loop>
+    <source src="birthday/KrishnaBirthday/Happy birthday funny song on tik tok.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="toggleMusic()" id="musicBtn">
+    🎵 Play Birthday Song
+</button>
+
+<script>
+function toggleMusic() {
+    const song = document.getElementById("birthdaySong");
+    const btn = document.getElementById("musicBtn");
+
+    if (song.paused) {
+        song.play();
+        btn.innerHTML = "⏸ Pause Music";
+    } else {
+        song.pause();
+        btn.innerHTML = "🎵 Play Birthday Song";
+    }
+}
+</script>
     <div class="footer">Made with 💗, good wishes and questionable jokes.</div>
   </main>
 
